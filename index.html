@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Таблицы HTML и как их использовать</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>HTML таблицы, основы</h1>
+    <h2>Этот раздел познакомит вас с таблицами HTML, представив самые базовые понятия - строки и ячейки, заголовки, слияние строк и столбцов.</h2>
+  </header>
+  <main>
+    <h3 id="firsttable">Основные теги для создания таблицы</h3>
+    <table class="tags">
+      <tr>
+        <th>Вид тега</th>
+        <th>Использование</th>
+        <th>Особенности</th>
+      </tr>
+      <tr>
+        <th>&lt;table&gt;</th>
+        <td>Содержимое заключается между этими двумя тегами, которые являются основами таблицы.</td>
+        <td>Двойной тег</td>
+      </tr>
+      <tr>
+        <th>&lt;td&gt;</th>
+        <td>Ячейка, является самым маленьким контейнером в таблице ('td' - сокращение от 'table data').</td>
+        <td>Двойной тег</td>
+      </tr>
+      <tr>
+        <th>&lt;tr&gt;</th>
+        <td>Тег для создания дополнительной строки в таблице ('tr' - сокращение от 'table row').</td>
+        <td>Двойной тег</td>
+      </tr>
+      <tr>
+        <th>&lt;th&gt;</th>
+        <td>Табличный заголовок — особая ячейка, которая идёт вначале строки или столбца и определяет тип данных, которые содержит данная строка или столбец ('th' - сокращение от 'table head')</td>
+        <td>Двойной тег</td>
+      </tr>
+    </table>
+    <div>
+      <h3 id="code">Пример разметки для создания таблицы:</h3>
+      <div id="coding">
+        <p>&lt;table&gt;</p>
+        <p class="trcode">&lt;tr&gt;</p>
+        <p class="tdcode">&lt;th&gt;Hi, I'm your first cell.&lt;/th&gt;</p>
+        <p class="tdcode">&lt;th&gt;I'm your second cell.&lt;/th&gt;</p>
+        <p class="tdcode">&lt;th&gt;I'm your third cell.&lt;/th&gt;</p>
+        <p class="tdcode">&lt;th&gt;I'm your fourth cell.&lt;/th&gt;</p>
+        <p class="trcode">&lt;/tr&gt;</p>
+        <p class="trcode">&lt;tr&gt;</p>
+        <p class="tdcode">&lt;td&gt;Second row, first cell.&lt;/td&gt;</p>
+        <p class="tdcode">&lt;td&gt;Cell 2.&lt;/td&gt;</p>
+        <p class="tdcode">&lt;td&gt;Cell 3.&lt;/td&gt;</p>
+        <p class="tdcode">&lt;td&gt;Cell 4.&lt;/td&gt;</p>
+        <p class="trcode">&lt;/tr&gt;</p>
+        <p>&lt;/table&gt;</p>
+      </div>
+    </div>
+      <h3 id="result">В результате получится таблица, которая будет выглядеть примерно так:</h3>
+      <table class="tags" align="center">
+        <tr>
+          <th>Hi, I'm your first cell.</th>
+          <th>I'm your second cell.</th>
+          <th>I'm your third cell.</th>
+          <th>I'm your fourth cell.</th>
+        </tr>
+        <tr>
+          <td>Second row, first cell.</td>
+          <td>Cell 2.</td>
+          <td>Cell 3.</td>
+          <td>Cell 4.</td>
+        </tr>
+      </table>
+    <h3>Основные атрибуты для редактирования таблицы</h3>
+    <table class="tags" align="center">
+      <tr>
+        <th>Вид артибута</th>
+        <th>Использование</th>
+        <th>Особенности</th>
+      </tr>
+      <tr>
+        <th>colspan</th>
+        <td>Используется для объединения столбцов.</td>
+        <td>Должен принимать цисловое значение (1,2,3...)</td>
+      </tr>
+      <tr>
+        <th>rowspan</th>
+        <td>Используется для объединения строк.</td>
+        <td>Должен принимать цисловое значение (1,2,3...)</td>
+      </tr>
+    </table>
+  </main>
+  <footer>
+    <h4>Для более детального ознакомления с таблицами HTML, перейдите на сайт MDN Web Docs по <a href="https://developer.mozilla.org/ru/docs/Learn/HTML/Tables/Basics">ссылке.</a></h4>
+  </footer>
+</body>
+</html>
