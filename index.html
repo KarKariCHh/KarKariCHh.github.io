@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Угадай число!</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <h1>Угадай число!</h1>
+      </header>
+      
+      <div class="rounds">
+        <p class="round">Раунд: <span id="round-number">1</span></p>
+        <p class="guess-label">Цель: <span id="target-number">?</span></p>
+      </div>
+
+      <div class="gaming-area">
+        <div class="guess computer-guess">
+          <div class="guess-title">
+            <p class="guess-label">Компьютер</p>
+            <p class="score-label">Счёт: <span id="computer-score">0</span></p>
+          </div>
+          <p id="computer-guess">?</p>
+          <p class="winning-text" id="computer-wins"></p>
+        </div>
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label">Вы</p>
+            <p class="score-label">Счёт: <span id="human-score">0</span></p>
+          </div>
+          <input type="number" id="human-guess" min=0 max=9 value=0>
+          <div class="number-controls">
+            <button class="number-control left" id="subtract" disabled>-</button>
+            <button class="number-control right" id="add">+</button>
+          </div>
+          <button class="button" id="guess">Выбрать цифру!</button>
+        </div>
+      </div>
+
+      <div class="next-round-container">
+        <button class="button" id="next-round" disabled>След. раунд</button>
+      </div>
+
+    </div>
+    
+    <div class="instructions">
+      <div class="instruction">
+        <h3>Шаг 1</h3>
+        <p>Введи цисло от 0 до 9 в ячейку.</p>
+      </div>
+      <div class="instruction">
+        <h3>Шаг 2</h3>
+        <p>Нажми "Выбрать цифру!" чтобы подтвердить свой выбор.</p>
+      </div>
+      <div class="instruction">
+        <h3>Шаг 3</h3>
+        <p>Нажми "След. раунд" чтобы сыграть снова.</p>
+      </div>
+    </div>
+
+    <script src="./game.js"></script>
+  </body>
+</html>
