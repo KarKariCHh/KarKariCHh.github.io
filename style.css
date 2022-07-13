@@ -1,0 +1,219 @@
+html, body {
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(125, 75, 42);
+  padding: 5px;
+}
+
+/* навигация и кнопка меню*/
+
+ul {
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-right: 15%;
+  padding-left: 14%;
+}
+
+/*#navlist li {
+  padding: 0px 20px;
+}*/
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(9, 6, 5);
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 40px;
+}
+
+.menupic {
+  background-color: rgb(111, 78, 55);
+  border: 5px solid rgb(111, 78, 55);
+  border-radius: 20px;
+  position: fixed;
+  top: 90%;
+  left: 2%;
+  z-index: 5;
+}
+
+/* header article */
+
+.header-article {
+  margin: 20px;
+  display: flex;
+  background-color: rgb(125, 75, 42);
+}
+
+.article-description {
+  margin: 3%;
+}
+
+.article-description h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.article-description p {
+  font-size: 22px;
+  text-align: left;
+  font-family: 'Mukta', sans-serif;
+  color: #fff;
+}
+
+/* main stage */
+
+.difcoffee {
+  margin: 0 7%;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.difcoffee h1 {
+  font-size: 32px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(9, 6, 5);
+}
+
+.difcoffee p {
+  font-size: 22px;
+  text-align:left;
+  font-family: 'Mukta', sans-serif;
+}
+
+.description-coffee {
+  margin: 0 7%;
+}
+
+.flex {
+  display: flex;
+  border-bottom: 1px solid #d9ddd7;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.recipe-coffee {
+  padding: 32px;
+}
+
+.reccof {
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.reccof h2 {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(55, 88, 111);
+  letter-spacing: 0.7px;
+  margin: 0;
+}
+
+.reccof p {
+  font-size: 20px;
+  font-family: 'Mukta', sans-serif;
+  margin: 0;
+}
+
+.reccof strong {
+  color: rgb(55, 88, 111);
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.coffeeimg {
+  display: block;
+  padding: 8px;
+  border: 1px solid #d9ddd7;
+  box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
+  margin-right: 20px;
+}
+
+.gotothetop {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  float: right;
+  text-align: center;
+  border: 1px solid rgb(55, 88, 111);
+  border-radius: 10px;
+  background-color: rgb(55, 88, 111);
+  width: 160px;
+}
+
+.gotothetop:hover {
+  background-color: rgb(25, 68, 111);
+}
+
+.gotothetop a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ссылки для прыжков по видам */
+
+.jumpatron {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+  background-color: rgb(125, 75, 42);
+}
+
+.jumpatron table {
+  margin: 0 auto;
+  width: 50%;
+  padding: 0px 30px 20px 30px;
+  border-spacing: 15px;
+}
+
+table th {
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+table td {
+  border: 1px solid #fff;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.jumpatronlinks {
+  color: rgb(125, 75, 42);
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.jumpatron h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  letter-spacing: 0.7px;
+}
+
+table th:hover {
+  background-color: burlywood;
+  border: 1px solid burlywood;
+}
+
+table td:hover {
+  background-color: burlywood;
+  border: 1px solid burlywood;
+}
+
+/* mobile phone */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .banner {
+    width: 200px;;
+  }
+  .coffeeimg {
+    border: 0px solid black;
+  }
+}
